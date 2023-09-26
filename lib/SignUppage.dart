@@ -98,14 +98,14 @@ class _SignUppageState extends State<SignUppage> {
 
                 Map userdata = {
                   "name": name.text,
-                  "email": email.text,
+                  "emaill": email.text,
                   "number": number.text,
                   "password":password.text,
                   "encodeimage":imageee
                 };
 
 
-                var url = Uri.https('example.com', 'whatsit/create');
+                var url = Uri.parse('https://illegible-north.000webhostapp.com/MyclassApp/classRegister.php');
                 var response = await http.post(url, body: userdata);
                 print('Response status: ${response.statusCode}');
                 print('Response body: ${response.body}');
